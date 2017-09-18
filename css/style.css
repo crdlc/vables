@@ -13,11 +13,11 @@ body:after {
     content: '';
     display: inline-block;
     position: fixed;
-    top: 10px;
-    left: 10px;
-    width: 40px;
-    height: 80px;
-    background-image: url(../images/logo.png);
+    top: .5em;
+    left: .5em;
+    width: 3em;
+    height: 6em;
+    //background-image: url(../images/logo.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -59,6 +59,20 @@ body a:hover{
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, .8);
+}
+.banner:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../images/logo.png)no-repeat center 0px;
+    background-size: auto 70%;
+    background-position: 3% 50%;
+    opacity: .4;
+    pointer-events: none;
 }
 .header {
     position: relative;
